@@ -21,7 +21,7 @@ public class logfile1 {
 		if(op == 3)
 			System.out.println("Division:" +(a/b));
 		
-		File file = new File("c:\\Files\\testFile1.txt");
+		File file = new File("F:\\FileText\\testFile1.txt");
 		if(file.createNewFile()) {
 			System.out.println("File is created");
 		}
@@ -29,10 +29,10 @@ public class logfile1 {
 			System.out.println("File is already exists");
 		}
 		FileWriter w = new FileWriter(file);
-		w.append("First num = "+a+"\n second num = "+b+"\noperation done");
+		w.append("First num = "+a+" second num = "+b+" "+"operation done");
 		w.close();
 		   
-        FileReader reader = new FileReader("c:\\Files\\testFile1.txt");
+        FileReader reader = new FileReader("F:\\FileText\\testFile1.txt");
 		int data;
 		while((data=reader.read())!=-1) {
 			System.out.println((char)data);
